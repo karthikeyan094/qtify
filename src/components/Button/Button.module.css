@@ -10,4 +10,5 @@
     border-radius: 12px;
     border: 1px solid var(--Primary-400, #34C94B);
     border-left: none;
+    cursor: pointer;
 }

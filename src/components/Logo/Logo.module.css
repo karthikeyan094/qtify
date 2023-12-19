@@ -1,19 +1,19 @@
 Logo {
-    color: #FFF;
-    font-family: "Avenir", "Next", "Condensed";
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 1px;
+  color: #fff;
+  font-family: "Avenir", "Next", "Condensed";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 1px;
 }
 
 .icon {
-    color: #121212;
-    font-family: Font Awesome 6 Pro;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 24px;
-    /* 85.714% */
-    letter-spacing: 1px;
+  color: #121212;
+  font-family: Font Awesome 6 Pro;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 24px;
+  /* 85.714% */
+  letter-spacing: 1px;
 }

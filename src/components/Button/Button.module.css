@@ -1,15 +1,15 @@
 .feedbackbtn {
-    color: var(--color-primary);
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 0.25px;
-    padding: 10px 16px;
-    background-color: var(--color-black);
-    border-radius: 12px;
-    border: 1px solid var(--Primary-400, #34C94B);
-    border-left: none;
-    cursor: pointer;
-    font-family: "Poppins";
+  color: var(--color-primary);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.25px;
+  padding: 10px 16px;
+  background-color: var(--color-black);
+  border-radius: 12px;
+  border: 1px solid var(--Primary-400, #34c94b);
+  border-left: none;
+  cursor: pointer;
+  font-family: "Poppins";
 }

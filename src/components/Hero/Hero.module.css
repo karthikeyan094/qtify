@@ -5,6 +5,7 @@
   width: 100vw;
   height: 270px;
   background-color: var(--color-black);
+  gap: 31px;
 }
 
 .heroTxt {

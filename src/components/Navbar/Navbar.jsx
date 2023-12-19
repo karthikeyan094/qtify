@@ -6,7 +6,7 @@ import Logo from "../Logo/Logo";
 
 function Navbar() {
     return <div className={style.navbar}>
-        <Logo />
+        <a href="/"><Logo /></a>
         <SearchBox placeholder={"Search a album of your choice"} />
         <Button>Give Feedback</Button>
     </div>

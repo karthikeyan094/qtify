@@ -1,0 +1,28 @@
+.wrapper {
+  margin: 24px;
+  overflow: hidden;
+}
+.sectionHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.sectionTitle {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+}
+.btn {
+  color: var(--color-primary);
+  background-color: var(--color-black);
+  box-shadow: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.cardContainer {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}

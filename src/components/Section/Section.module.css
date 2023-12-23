@@ -1,6 +1,6 @@
 .wrapper {
   margin: 24px;
-  overflow: hidden;
+  padding: 20px;
 }
 .sectionHead {
   display: flex;

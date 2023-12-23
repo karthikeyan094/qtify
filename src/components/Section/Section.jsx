@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import styles from "./Section.module.css";
 import Card from "../Card/Card";
+import Carousel from "../Carousel/Carousel";
 
 function Section({ type, data }) {
-  let [toggelView, setToggleView] = useState(true);
+  let [toggelView, setToggleView] = useState(false);
   console.log(data);
   const handleToggle = () => {
     setToggleView((prevState) => {
@@ -30,7 +31,10 @@ function Section({ type, data }) {
             })}{" "}
           </>
         ) : (
-          <>null</>
+          <Carousel
+            data={data}
+            renderComponent={(data) => <Card data={data} type={type} />}
+          />
         )}
       </div>
     </div>

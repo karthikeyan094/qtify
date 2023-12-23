@@ -17,6 +17,7 @@
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -25,4 +26,8 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-black);
   color: var(--color-white);
+}
+
+.swiper-slide {
+  width: auto !important;
 }

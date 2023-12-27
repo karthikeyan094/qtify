@@ -16,3 +16,26 @@ export const fetchNewAlbum = async () => {
     console.error(e);
   }
 };
+
+export const fetchAllSongs = async () => {
+  try {
+    const response = await axios.get(
+      `https://qtify-backend-labs.crio.do/songs`
+    );
+    console.log("songs api", response.data);
+    return response.data;
+  } catch (err) {
+    console.log("ERROR IN API", err);
+  }
+};
+export const fetchGenres = async () => {
+  try {
+    const response = await axios.get(
+      "https://qtify-backend-labs.crio.do/genres"
+    );
+    console.log("songs api", response.data);
+    return response.data;
+  } catch (err) {
+    console.log("ERROR IN API", err);
+  }
+};

@@ -7,6 +7,9 @@
   align-items: baseline;
   justify-content: space-between;
 }
+.filterWrapper {
+  margin-top: 15px;
+}
 .sectionTitle {
   font-family: Poppins;
   font-size: 20px;

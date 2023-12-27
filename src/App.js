@@ -2,11 +2,10 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import { Outlet } from "react-router-dom";
-import { fetchTopAlbum, fetchNewAlbum } from "./Api/Api";
+import { fetchTopAlbum, fetchNewAlbum, fetchAllSongs } from "./Api/Api";
 function App() {
   let [Data, setData] = useState({});
   const fetchData = (type, source) => {
-    console.log("'.....");
     source().then((data) => {
       setData((prevData) => {
         return { ...prevData, [type]: data };
@@ -16,12 +15,13 @@ function App() {
   useEffect(() => {
     fetchData("topAlbums", fetchTopAlbum);
     fetchData("newAlbums", fetchNewAlbum);
+    fetchData("songs", fetchAllSongs);
   }, []);
-  const { topAlbums = [], newAlbums = [] } = Data;
+  const { topAlbums = [], newAlbums = [], songs = [] } = Data;
   return (
     <div>
       <Navbar />
-      <Outlet context={{ data: { topAlbums, newAlbums } }} />
+      <Outlet context={{ data: { topAlbums, newAlbums, songs } }} />
     </div>
   );
 }

@@ -35,7 +35,7 @@ function Section({ type, data, filterSource }) {
       <div className={styles.sectionHead}>
         <div className={styles.sectionTitle}>{type}</div>
 
-        {!type === "Songs" && (
+        {!filterSource && (
           <button className={styles.btn} onClick={handleToggle}>
             {!toggelView ? "Show all" : "Collapse"}
           </button>
